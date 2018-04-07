@@ -1,0 +1,21 @@
+{
+  "name": "emailer",
+  "description": "Emailer test task",
+  "main": "emailer.html",
+  "authors": [
+    "Uncle Feudor"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.9"
+  }
+}

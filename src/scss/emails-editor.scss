@@ -1,0 +1,82 @@
+$good-email-background: #d7e7ff;
+$bad-email-background: #ff633f;
+$input-placeholder-text: #bbb;
+
+emails-editor{
+  font-family: 'MyriadPro Regular', sans-serif;
+  .emails-holder{
+    padding: 6px 10px;
+    overflow: auto;
+    margin-left: inherit;
+    margin-right: inherit;
+    width: 80%;
+    min-height: 80px;
+    background: #fff;
+    margin-top: 34px;
+
+    .email{
+      background-color: $good-email-background;
+      padding: .4em 24px .2em .5em;
+      position: relative;
+      line-height: inherit;
+      display: block;
+      float: left;
+      border-radius: 20px;
+      margin: 2px 5px 2px 0;
+
+      font-size: 13px;
+      max-width: 80%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      .address{
+        padding: 3px;
+      }
+      .remove{
+        cursor: pointer;
+        position: absolute;
+        right: .5em;
+        top: 50%;
+        margin-top: -8px;
+        line-height: 17px;
+        font-size: 17px;
+      }
+    }
+    .email.error{
+        background-color: $bad-email-background;
+        color: #fff;
+    }
+    .new-email {
+      padding: 0.3em 4px .25em 7px;
+      display: block;
+      float: left;
+      font-size: 12px;
+      margin: 3px 5px 2px 0;
+      input{
+        box-sizing: border-box;
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: inherit;
+        background-color: inherit;
+        outline: none;
+      }
+      input::-webkit-input-placeholder {
+        color: $input-placeholder-text;
+      }
+
+      input::-moz-placeholder {
+        color: $input-placeholder-text;
+      }
+
+      input:-moz-placeholder {
+        color: $input-placeholder-text;
+      }
+
+      input:-ms-input-placeholder {
+        color: $input-placeholder-text;
+      }
+    }
+  }
+}

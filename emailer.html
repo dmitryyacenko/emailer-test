@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emailer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,400,500" rel="stylesheet">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="dist/bundle.js"></script>
+</head>
+<body ng-app="emailTestApp">
+    <div class="content" ng-controller="mainController as myCtrl">
+        <div class="emails-editor">
+            <div class="title">Share "Board name" with others</div>
+            <emails-editor emails="myCtrl.emails"></emails-editor>
+        </div>
+        <div class="buttons">
+            <button ng-click="myCtrl.addRandomEmail()">Add email</button>
+            <button ng-click="myCtrl.getEmailsCount()">Get emails count</button>
+        </div>
+    </div>
+
+</body>
+</html>

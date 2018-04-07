@@ -1,0 +1,48 @@
+$editor-color:#f5f5f5;
+
+@font-face{
+  font-family: 'MyriadPro Regular';
+
+  src: url('../fonts/MyriadPro-Regular.eot');
+
+  src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+
+  src: url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.content {
+  padding-top: 50px;
+  width: 50vw;
+  margin-left: 25vw;
+  min-width: 250px;
+}
+
+.emails-editor {
+  padding: 34px;
+  background-color: $editor-color;
+}
+
+.title {
+  font-family: 'MyriadPro Regular', sans-serif;
+  font-size: 20px;
+}
+
+.buttons{
+  padding: 45px 34px;
+  display: flex;
+  justify-content: flex-start;
+  button{
+    border-radius: 3px;
+    border: none;
+    padding: 8px 25px;
+    background: #658fff;
+    color:#fff;
+    margin-right: 20px;
+    font-family: 'MyriadPro Regular', sans-serif;
+    font-size: 13px;
+  }
+}
